@@ -1,0 +1,59 @@
+//This file explains all the moves that input2.txt
+//The upper player (player 2) wins!
+
+
+3 //start game
+05tr //lower player (1), reg no jump avail
+12bl //upper player (2), reg no jump avail
+25tr //lower player (1), reg no jump avail
+03br //upper player (2), reg jumped!
+36tl //lower player (1), reg jumped!
+32bl //upper player (2), reg no jump avail
+34tl //lower player (1), reg jumped!
+21bl //upper player (2), reg jumped!
+03br //upper player (2), reg jumped!
+16tr //lower player (1), reg jumped!
+41bl //upper player (2), reg no jump avail
+34tr //lower player (1), reg no jump avail
+32br //upper player (2), reg jumped!
+54bl //upper player (2), reg jumped!
+27tr //lower player (1), reg jumped!
+52bl //upper player (2), reg jumped!
+45tr //lower player (1), reg no jump avail
+50bl //upper player (2), reg no jump avail
+54tl //lower player (1), reg jumped!
+32tl //lower player (1), reg jumped! KINGED!
+72bl //upper player (2), reg no jump avail
+50br //lower player (1), king jumped!
+72bl //lower player (1), king jumped again!
+01br //upper player (2), reg no jump avail
+54tl //lower player (1), king no jump avail
+10br //upper player (2), reg no jump avail
+43tl //lower player (1), king jump should come next
+21br //upper player (2), reg jumped king!
+56tl //lower player (1), reg no jump avail
+12br //upper player (2), reg no jump avail
+45tl //lower player (1), reg no jump avail
+43bl //upper player (2), reg jumped!
+47tl //lower player (1), reg no jump avail
+25br //upper player (2), reg jumped! KINGED!
+67tl //lower player (1), reg no jump avail
+23br //upper player (2), reg no jump avail
+65tl //lower player (1), reg no jump avail
+47tr //upper player (2), king jumped!
+65tl //upper player (2), king jumped!
+76tl //lower player (1), reg no jump avail
+34br //upper player (2), reg no jump avail
+07tr //lower player (1), reg no jump avail
+45bl //upper player (2), reg no jump avail
+16tr //lower player (1), reg no jump avail
+36bl //upper player (2), reg became KINGED! NEED TO MAKE THIS ACTUALLY HAPPEN
+25tr //lower player (1), reg no jump avail
+43bl //upper player (2), king jumped reg!
+65tr //lower player (1), reg no jump avail 
+25tr //upper player (2), king no jump avail //player y is the xs guy upper player 
+74tl //lower player (1), reg no jump avail //invalid move
+34tr //upper player (2), king no jump avail
+63tl //lower player (1), reg no jump avail
+43tr //upper player (2), king jumped! Winner!!
+//GAME OVER UPPER PLAYER (PLAYER 2) WINS!!!!

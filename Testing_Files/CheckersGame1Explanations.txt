@@ -1,0 +1,58 @@
+//This file explains all the moves that input1.txt
+//The lower player (player 1) wins!!
+
+3 //start checkers game
+05tr //lower player (2) reg, no jumps avail
+12bl //upper player (1) reg, no jumps avail
+34tr //lower player (2) reg, not a piece, so go again (INVALID)
+14tr //lower player (2) reg, now a jump will be avail
+32br //upper player (1) reg, not a jump, because jump avail (INVALID)
+32bl //upper player (1) reg, made the jump!
+25tr //lower player (2) reg, no jumps avail
+41bl //upper player (1) reg, no jumps avail
+16tr //lower player (2) reg, no jumps avail
+30br //upper player (1) reg, no jumps avail
+07tr //lower player (2) reg, no jumps avail
+32bl //upper player (1) reg, now should be a double jump, and becomes king
+34tl //lower player (1) reg, made the jump! should have another!
+12tr //lower player (1) reg, made next jump, became King!!
+41bl //upper player (2) reg, no jumps avail
+30br //lower player (1) king, creates an avail jump for King
+14bl //upper player (2) reg, king should jump next
+41br //lower player (1) king, king jumps!
+72bl //upper player (2) reg, jumped king!
+65tl //lower player (1) reg, jumps reg!
+43tl //lower player (1) reg, jumps again! 
+10br //upper player (2) reg, jumps!
+25tl //lower player (1) reg, no jumps avail
+03br //upper player (2) reg, jumps reg
+25bl //upper player (2) reg, jumps reg becomes king
+45tr //lower player (1) reg, no jumps avail
+07tr //upper player (2) king, no jumps avail
+54tr //lower player (1), reg, no jumps avail
+32br //upper player (2), reg, no jumps avail
+63tl //lower player (1), reg, no jumps avail
+43bl //upper player (2), reg no jumps avail
+76tl //lower player (1), reg no jumps avail 
+61bl //upper player (2), reg jumps reg!
+65tr //lower player (1), reg no jumps avail
+16tr //upper player (2), reg no jump avail
+36tl //lower player (1), reg no jump avail
+34br //upper player (2), reg no jump avail
+56tl //lower player (1), reg jumps reg! should jump again
+34tr //lower player (1), reg jumps reg again!
+50bl //upper player (2) reg no jump avail
+52tr //lower player (1) reg, invalid jump
+52tl //lower player (1) reg jumped crowned
+05br //upper player (2) reg jump
+27tl //lower player (1) reg no jump avail
+01br //upper player (2) reg no jump avail
+30b1 //lower player (1) king no jump avail
+70bl //upper player (2) reg no jump avail
+21bl //lower player (1) king jump 
+61b1 //upper player (2) reg no jump avail
+03tr //lower player (1) king no jump avail
+52br //upper player (2) reg no jump avail
+74tl //lower player (1) reg jumped!
+//GAME OVER LOWER PLAYER (PLAYER 1) WINS!!!!
+

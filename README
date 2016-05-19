@@ -1,0 +1,118 @@
+README
+
+TEAM
+Anuj Mehndiratta (amehndi1)
+Brennan Schneider (bschne20)
+Garren Angacian (gangaci1)
+April 20, 2016
+CS120 Intermediate Programming
+
+
+DESIGN
+Our overall design is relatively simple. The following is a brief explanation 
+on the design:
+
+We have a game class that has a virtual attack square method, and it also has 
+an int turn that all of our games use to keep track of who's turn it is in each
+of the games. 
+
+We have a board class that creates a board object of whatever size we pass in to
+the constructor. This board initializes a square board of dash characters. In both
+of the battleship games we then initialize the spots that have ships to letters
+that correspond to the ship. For checkers we fill in the players chips onto the 
+board with player1 being O's and player2 being x's. 
+
+For Static Battleships:
+Static battleships has ship objects that are initialized on the board and then 
+players alternate and attack squares on the opponents board until someoene has
+no ships left. 
+
+For Mobile Battleships:
+Mobile battlships also has ship objects that are initialed on the board as part
+of setup and then players can either move their ships or attack the other players
+ships on their turn. When the other player's board doesn't have any more ships
+left on it a player wins.
+
+For Checkers:
+We have one board with player 1 being O's who goes first and player 2 
+being X's who goes second on the board. We move around the board and keep track 
+of the coordinates of the pieces of a given players pieces in a map. We update 
+that a piece becomes a king in the map and then apply new rules to it. Our code 
+for checkers is broken down into many many methods to allow for easy reading. Each
+function takes care of a very specific case. Attack square then uses these 
+functions and handles most of the gameplay.   
+
+
+REQUIRED LANGUAGE FEATURES:
+Containers:
+For all games:
+	We have a board class that all of the games use. This board is a vector of
+	vectors of chars vector<vector<char>>. We also have a player class that both
+	of our games use. This player class has a map of Coords to chars. This map
+	is used to store the type of piece and the pieces location for a given player
+	in checkers and it is used to store the type of ship and the location of the
+	ship for battleships.
+
+Both Battleships Games:
+	For Battleships we made a ships class. This is primarily where we use 
+	container classes for the battleships games. For the battleships game we have 
+	a map of characters to an array of coordinates. This map helps us see what the
+	coordinates of a given ship are. We also have another array that is just used
+	to store the given ships coordinates. In our BPlayer class, we have an array
+	of all of a given players ship objects. These are all of the containers that
+	we used for battleships.
+
+Checkers Game:
+	The checkers game uses a map from coordinates to chars that tells the player
+	where its chips are on the board and whether they are a regular chip or a 
+	king chip on that spot.  
+
+Inheritance and Polymorphism:
+For all games:
+	We have a games target for this project. In the games.cpp file, we do very
+	very little work. The interface for all of the games and the setup is handled 
+	in the User class. All of the games extend the game class and use the board 
+	object that is created and initialized in the board class. Static Battleships
+	extends the game class and Mobile Battleships extends the Static Battelships
+	class. The battleships games also have BPlayer objects that are the players 
+	of the game. BPlayers, extend general Players. Both battleships also make use 
+	of the ship class which has defined the ship objects. The ship class extends 
+	the piece class. Checkers also extends the game class. Checkers makes use of 
+	Player objects since we didn’t need as much specific info for the player in
+	this game. Checkers also makes use of the pieces object. We also implemented
+	operator overloading on the << to make the operator print out our board for
+	checkers. We used this during checkers and it was super useful so we could see
+	our moves as we did them. 
+  
+
+
+COMPLETENESS
+Our Code should be complete and should work perfectly.
+
+
+SPECIAL INSTRUCTIONS
+We have submitted some input files (input1.txt and input2.txt) these correspond
+to (checkersinput1.txt and checkersinput2.txt). The input files can be fed into
+the program as a test for checkers. We made these to test the game and every case 
+on top of our testing unit. This is just an extra piece of work that we did and 
+decided to submit with our project. One minor note, when looking over the final 
+instructions we realized that if a piece jumped to become a king it should only 
+print CROWNED but ours prints JUMPED CROWNED, but does the move correctly exactly 
+how they want us to, the only difference is that word being printed. 
+
+To test our files we used a bunch of text files that you can use.
+You have to do:
+./games < MobileBattleshipGame1.txt > output1.txt
+./games < MobileBattleshipGame2.txt > output2.txt
+./games < StaticBattleshipGame1.txt > output3.txt
+./games < CheckersGame1.txt > output4.txt
+./games < CheckersGame1.txt > output5.txt
+
+We made output files by hand that should correspond to the given moves from the 
+text file. Then we compared the output files to what our program spit out to see 
+if we did it right. After a bunch of testing, debugging, and some great teamwork and 
+enthusiasm we were able to make the files match and our programs worked perfectly
+even for more cases that we did not show! Awesome!
+
+Also CheckersGame1Explanation.txt explains what each move should do for CheckersGame1.txt
+and CheckersGame2Explanation.txt explains what each move should do for CheckersGame2.txt.
